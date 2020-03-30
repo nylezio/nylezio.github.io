@@ -68,7 +68,7 @@
 
 
 
-  <meta name="keywords" content="Hexo, NexT" />
+  <meta name="keywords" content="JUC," />
 
 
 
@@ -79,14 +79,17 @@
 
 
 
-<meta name="description" content="JerryZheng">
-<meta property="og:type" content="website">
-<meta property="og:title" content="Jerry&#39;s Blog">
-<meta property="og:url" content="http://yoursite.com/index.html">
+<meta name="description" content="Thread1.Thread新建一个线程 1new Thread(new sourceClass(implements Runnable),&quot;thread name&quot;).start();   2.JMMconcurrent并发atomic原子性ReentrantLock重入锁  3.AtomicInteger：CAS思想 –&gt;UnSafe—&gt;CAS底层思想—&gt;ABA问题—&gt;">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Thread-codeJerry">
+<meta property="og:url" content="http://yoursite.com/2020/03/30/Thread-codeJerry/index.html">
 <meta property="og:site_name" content="Jerry&#39;s Blog">
-<meta property="og:description" content="JerryZheng">
+<meta property="og:description" content="Thread1.Thread新建一个线程 1new Thread(new sourceClass(implements Runnable),&quot;thread name&quot;).start();   2.JMMconcurrent并发atomic原子性ReentrantLock重入锁  3.AtomicInteger：CAS思想 –&gt;UnSafe—&gt;CAS底层思想—&gt;ABA问题—&gt;">
 <meta property="og:locale" content="en_US">
+<meta property="article:published_time" content="2020-03-30T14:09:48.000Z">
+<meta property="article:modified_time" content="2020-03-30T14:10:47.476Z">
 <meta property="article:author" content="Zheng yongjie">
+<meta property="article:tag" content="JUC">
 <meta name="twitter:card" content="summary">
 
 
@@ -117,13 +120,13 @@
 
 
 
-  <link rel="canonical" href="http://yoursite.com/"/>
+  <link rel="canonical" href="http://yoursite.com/2020/03/30/Thread-codeJerry/"/>
 
 
 
 
 
-  <title>Jerry's Blog</title>
+  <title>Thread-codeJerry | Jerry's Blog</title>
   
 
 
@@ -142,8 +145,7 @@
     
   
 
-  <div class="container sidebar-position-left 
-  page-home">
+  <div class="container sidebar-position-left page-post-detail">
     <div class="headband"></div>
 
     <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
@@ -216,9 +218,9 @@
         <div class="content-wrap">
           <div id="content" class="content">
             
-  <section id="posts" class="posts-expand">
+
+  <div id="posts" class="posts-expand">
     
-      
 
   
 
@@ -248,9 +250,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2020/03/30/Thread-codeJerry/" itemprop="url">Thread-codeJerry</a></h1>
+          <h1 class="post-title" itemprop="name headline">Thread-codeJerry</h1>
         
 
         <div class="post-meta">
@@ -300,9 +300,7 @@
       
 
       
-        
-          
-            <h2 id="Thread"><a href="#Thread" class="headerlink" title="Thread"></a>Thread</h2><h5 id="1-Thread"><a href="#1-Thread" class="headerlink" title="1.Thread"></a>1.Thread</h5><p>新建一个线程</p>
+        <h2 id="Thread"><a href="#Thread" class="headerlink" title="Thread"></a>Thread</h2><h5 id="1-Thread"><a href="#1-Thread" class="headerlink" title="1.Thread"></a>1.Thread</h5><p>新建一个线程</p>
 <figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">new</span> Thread(<span class="keyword">new</span> sourceClass(implements Runnable),<span class="string">"thread name"</span>).start();</span><br></pre></td></tr></table></figure>
 
 <hr>
@@ -359,8 +357,6 @@ ExecutorService threadPool3 = Executors.newCachedThreadPool();<span class="comme
 </li>
 </ul>
 <h5 id="9-死锁编码及定位分析"><a href="#9-死锁编码及定位分析" class="headerlink" title="9.死锁编码及定位分析"></a>9.死锁编码及定位分析</h5><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">* 多个线程（两个以上）争夺资源互相等待的现象</span><br><span class="line">* 必须具备四个条件：</span><br><span class="line">* 互斥</span><br><span class="line">* 请求与保持</span><br><span class="line">* 资源不可剥夺</span><br><span class="line">* 循环等待条件</span><br></pre></td></tr></table></figure>
-          
-        
       
     </div>
     
@@ -375,265 +371,36 @@ ExecutorService threadPool3 = Executors.newCachedThreadPool();<span class="comme
 
     <footer class="post-footer">
       
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2020/03/19/test-my-site/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="Zheng yongjie">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/avatar.gif">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Jerry's Blog">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2020/03/19/test-my-site/" itemprop="url">test_my_site</a></h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">Posted on</span>
-              
-              <time title="Post created" itemprop="dateCreated datePublished" datetime="2020-03-19T00:00:38+08:00">
-                2020-03-19
-              </time>
-            
-
-            
-
-            
-          </span>
-
+        <div class="post-tags">
           
-
+            <a href="/tags/JUC/" rel="tag"># JUC</a>
           
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
         </div>
-      </header>
-    
+      
 
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
+      
       
       
 
       
-        
-          
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
             
-          
-        
-      
-    </div>
-    
-    
-    
-
-    
-
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2020/03/18/hello-world/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="Zheng yongjie">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/avatar.gif">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Jerry's Blog">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2020/03/18/hello-world/" itemprop="url">Hello World</a></h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
+              <a href="/2020/03/19/test-my-site/" rel="next" title="test_my_site">
+                <i class="fa fa-chevron-left"></i> test_my_site
+              </a>
             
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">Posted on</span>
-              
-              <time title="Post created" itemprop="dateCreated datePublished" datetime="2020-03-18T23:45:42+08:00">
-                2020-03-18
-              </time>
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
             
-
-            
-
-            
-          </span>
-
-          
-
-          
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
+          </div>
         </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
       
 
       
-        
-          
-            <p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="noopener">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="noopener">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/one-command-deployment.html" target="_blank" rel="noopener">Deployment</a></p>
-
-          
-        
-      
-    </div>
-    
-    
-    
-
-    
-
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
       
     </footer>
   </div>
@@ -643,10 +410,11 @@ ExecutorService threadPool3 = Executors.newCachedThreadPool();<span class="comme
   </article>
 
 
-    
-  </section>
 
-  
+    <div class="post-spread">
+      
+    </div>
+  </div>
 
 
           </div>
@@ -654,6 +422,10 @@ ExecutorService threadPool3 = Executors.newCachedThreadPool();<span class="comme
 
 
           
+
+  
+
+
 
         </div>
         
@@ -674,8 +446,17 @@ ExecutorService threadPool3 = Executors.newCachedThreadPool();<span class="comme
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            Table of Contents
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            Overview
+          </li>
+        </ul>
+      
 
-      <section class="site-overview-wrap sidebar-panel sidebar-panel-active">
+      <section class="site-overview-wrap sidebar-panel">
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
             
@@ -726,6 +507,22 @@ ExecutorService threadPool3 = Executors.newCachedThreadPool();<span class="comme
         </div>
       </section>
 
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#Thread"><span class="nav-number">1.</span> <span class="nav-text">Thread</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#1-Thread"><span class="nav-number">1.0.0.1.</span> <span class="nav-text">1.Thread</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#2-JMM"><span class="nav-number">1.0.0.2.</span> <span class="nav-text">2.JMM</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#3-AtomicInteger："><span class="nav-number">1.0.0.3.</span> <span class="nav-text">3.AtomicInteger：</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#4-容器线程不安全"><span class="nav-number">1.0.0.4.</span> <span class="nav-text">4.容器线程不安全</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#5-锁"><span class="nav-number">1.0.0.5.</span> <span class="nav-text">5.锁</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#6-JUC"><span class="nav-number">1.0.0.6.</span> <span class="nav-text">6.JUC</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#7-Callable"><span class="nav-number">1.0.0.7.</span> <span class="nav-text">7.Callable</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#8-线程池-（7大参数）"><span class="nav-number">1.0.0.8.</span> <span class="nav-text">8.线程池 （7大参数）</span></a><ol class="nav-child"><li class="nav-item nav-level-6"><a class="nav-link" href="#1、2、运用到了阻塞队列-BlockingQueue"><span class="nav-number">1.0.0.8.1.</span> <span class="nav-text">1、2、运用到了阻塞队列 BlockingQueue</span></a></li><li class="nav-item nav-level-6"><a class="nav-link" href="#3、运用到了SynchronousQueue同步队列"><span class="nav-number">1.0.0.8.2.</span> <span class="nav-text">3、运用到了SynchronousQueue同步队列</span></a></li><li class="nav-item nav-level-6"><a class="nav-link" href="#JDK内置的RejectedExecutionException拒绝策略："><span class="nav-number">1.0.0.8.3.</span> <span class="nav-text">JDK内置的RejectedExecutionException拒绝策略：</span></a></li></ol></li><li class="nav-item nav-level-5"><a class="nav-link" href="#9-死锁编码及定位分析"><span class="nav-number">1.0.0.9.</span> <span class="nav-text">9.死锁编码及定位分析</span></a></li></ol></li></ol></li></ol></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
       
 
       
@@ -866,6 +663,10 @@ ExecutorService threadPool3 = Executors.newCachedThreadPool();<span class="comme
 
 
   
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.4"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.1.4"></script>
+
+
 
   
 
