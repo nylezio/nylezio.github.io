@@ -79,15 +79,15 @@
 
 
 
-<meta name="description" content="Thread1.Thread新建一个线程 1new Thread(new sourceClass(implements Runnable),&quot;thread name&quot;).start();   2.JMMconcurrent并发atomic原子性ReentrantLock重入锁  3.AtomicInteger：CAS思想 –&gt;UnSafe—&gt;CAS底层思想—&gt;ABA问题—&gt;">
+<meta name="description" content="Thread1.Thread新建一个线程 1new Thread(new sourceClass(implements Runnable),&quot;thread name&quot;).start();   2.JMM（三个特点）Java Memory Model 是一种规范 并不真实存在 ​    可见性（通知机制） ​    原子性 ​    有序性  concurrent并发（HashMap）atomic原">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Thread-codeJerry">
 <meta property="og:url" content="http://yoursite.com/2020/03/30/Thread-codeJerry/index.html">
 <meta property="og:site_name" content="codeJerry&#39;s Blog">
-<meta property="og:description" content="Thread1.Thread新建一个线程 1new Thread(new sourceClass(implements Runnable),&quot;thread name&quot;).start();   2.JMMconcurrent并发atomic原子性ReentrantLock重入锁  3.AtomicInteger：CAS思想 –&gt;UnSafe—&gt;CAS底层思想—&gt;ABA问题—&gt;">
+<meta property="og:description" content="Thread1.Thread新建一个线程 1new Thread(new sourceClass(implements Runnable),&quot;thread name&quot;).start();   2.JMM（三个特点）Java Memory Model 是一种规范 并不真实存在 ​    可见性（通知机制） ​    原子性 ​    有序性  concurrent并发（HashMap）atomic原">
 <meta property="og:locale" content="en_US">
 <meta property="article:published_time" content="2020-03-30T14:09:48.000Z">
-<meta property="article:modified_time" content="2020-03-30T14:10:47.476Z">
+<meta property="article:modified_time" content="2020-03-31T03:58:44.046Z">
 <meta property="article:author" content="codeJerry">
 <meta property="article:tag" content="JUC">
 <meta name="twitter:card" content="summary">
@@ -304,7 +304,12 @@
 <figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">new</span> Thread(<span class="keyword">new</span> sourceClass(implements Runnable),<span class="string">"thread name"</span>).start();</span><br></pre></td></tr></table></figure>
 
 <hr>
-<h5 id="2-JMM"><a href="#2-JMM" class="headerlink" title="2.JMM"></a>2.JMM</h5><p>concurrent并发<br>atomic原子性<br>ReentrantLock重入锁</p>
+<h5 id="2-JMM（三个特点）Java-Memory-Model-是一种规范-并不真实存在"><a href="#2-JMM（三个特点）Java-Memory-Model-是一种规范-并不真实存在" class="headerlink" title="2.JMM（三个特点）Java Memory Model 是一种规范 并不真实存在"></a>2.JMM（三个特点）Java Memory Model 是一种规范 并不真实存在</h5><ol>
+<li>​    可见性（通知机制）</li>
+<li>​    原子性</li>
+<li>​    有序性</li>
+</ol>
+<p>concurrent并发（HashMap）<br>atomic原子性（atomicInteger、atomicReference）<br>ReentrantLock重入锁</p>
 <hr>
 <h5 id="3-AtomicInteger："><a href="#3-AtomicInteger：" class="headerlink" title="3.AtomicInteger："></a>3.AtomicInteger：</h5><p>CAS思想 –&gt;UnSafe—&gt;CAS底层思想—&gt;ABA问题—&gt;原子引用更新—&gt;如何规避ABA问题</p>
 <p>Unsafe类+CAS思想（自旋锁）<br>CAS：（CompareAndSwap）比较当前工作内存中的值和主内存中的值，如果相同则操作，否则什么都不做，继续比较直到成功为止。</p>
@@ -396,6 +401,10 @@ ExecutorService threadPool3 = Executors.newCachedThreadPool();<span class="comme
 
           <div class="post-nav-prev post-nav-item">
             
+              <a href="/2020/03/31/JVM/" rel="prev" title="JVM">
+                JVM <i class="fa fa-chevron-right"></i>
+              </a>
+            
           </div>
         </div>
       
@@ -471,7 +480,7 @@ ExecutorService threadPool3 = Executors.newCachedThreadPool();<span class="comme
               
                 <a href="/archives/%20%7C%7C%20archive">
               
-                  <span class="site-state-item-count">3</span>
+                  <span class="site-state-item-count">4</span>
                   <span class="site-state-item-name">posts</span>
                 </a>
               </div>
@@ -484,7 +493,7 @@ ExecutorService threadPool3 = Executors.newCachedThreadPool();<span class="comme
               
               <div class="site-state-item site-state-tags">
                 
-                  <span class="site-state-item-count">1</span>
+                  <span class="site-state-item-count">2</span>
                   <span class="site-state-item-name">tags</span>
                 
               </div>
@@ -517,7 +526,7 @@ ExecutorService threadPool3 = Executors.newCachedThreadPool();<span class="comme
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#Thread"><span class="nav-number">1.</span> <span class="nav-text">Thread</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#1-Thread"><span class="nav-number">1.0.0.1.</span> <span class="nav-text">1.Thread</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#2-JMM"><span class="nav-number">1.0.0.2.</span> <span class="nav-text">2.JMM</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#3-AtomicInteger："><span class="nav-number">1.0.0.3.</span> <span class="nav-text">3.AtomicInteger：</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#4-容器线程不安全"><span class="nav-number">1.0.0.4.</span> <span class="nav-text">4.容器线程不安全</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#5-锁"><span class="nav-number">1.0.0.5.</span> <span class="nav-text">5.锁</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#6-JUC"><span class="nav-number">1.0.0.6.</span> <span class="nav-text">6.JUC</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#7-Callable"><span class="nav-number">1.0.0.7.</span> <span class="nav-text">7.Callable</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#8-线程池-（7大参数）"><span class="nav-number">1.0.0.8.</span> <span class="nav-text">8.线程池 （7大参数）</span></a><ol class="nav-child"><li class="nav-item nav-level-6"><a class="nav-link" href="#1、2、运用到了阻塞队列-BlockingQueue"><span class="nav-number">1.0.0.8.1.</span> <span class="nav-text">1、2、运用到了阻塞队列 BlockingQueue</span></a></li><li class="nav-item nav-level-6"><a class="nav-link" href="#3、运用到了SynchronousQueue同步队列"><span class="nav-number">1.0.0.8.2.</span> <span class="nav-text">3、运用到了SynchronousQueue同步队列</span></a></li><li class="nav-item nav-level-6"><a class="nav-link" href="#JDK内置的RejectedExecutionException拒绝策略："><span class="nav-number">1.0.0.8.3.</span> <span class="nav-text">JDK内置的RejectedExecutionException拒绝策略：</span></a></li></ol></li><li class="nav-item nav-level-5"><a class="nav-link" href="#9-死锁编码及定位分析"><span class="nav-number">1.0.0.9.</span> <span class="nav-text">9.死锁编码及定位分析</span></a></li></ol></li></ol></li></ol></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#Thread"><span class="nav-number">1.</span> <span class="nav-text">Thread</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#1-Thread"><span class="nav-number">1.0.0.1.</span> <span class="nav-text">1.Thread</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#2-JMM（三个特点）Java-Memory-Model-是一种规范-并不真实存在"><span class="nav-number">1.0.0.2.</span> <span class="nav-text">2.JMM（三个特点）Java Memory Model 是一种规范 并不真实存在</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#3-AtomicInteger："><span class="nav-number">1.0.0.3.</span> <span class="nav-text">3.AtomicInteger：</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#4-容器线程不安全"><span class="nav-number">1.0.0.4.</span> <span class="nav-text">4.容器线程不安全</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#5-锁"><span class="nav-number">1.0.0.5.</span> <span class="nav-text">5.锁</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#6-JUC"><span class="nav-number">1.0.0.6.</span> <span class="nav-text">6.JUC</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#7-Callable"><span class="nav-number">1.0.0.7.</span> <span class="nav-text">7.Callable</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#8-线程池-（7大参数）"><span class="nav-number">1.0.0.8.</span> <span class="nav-text">8.线程池 （7大参数）</span></a><ol class="nav-child"><li class="nav-item nav-level-6"><a class="nav-link" href="#1、2、运用到了阻塞队列-BlockingQueue"><span class="nav-number">1.0.0.8.1.</span> <span class="nav-text">1、2、运用到了阻塞队列 BlockingQueue</span></a></li><li class="nav-item nav-level-6"><a class="nav-link" href="#3、运用到了SynchronousQueue同步队列"><span class="nav-number">1.0.0.8.2.</span> <span class="nav-text">3、运用到了SynchronousQueue同步队列</span></a></li><li class="nav-item nav-level-6"><a class="nav-link" href="#JDK内置的RejectedExecutionException拒绝策略："><span class="nav-number">1.0.0.8.3.</span> <span class="nav-text">JDK内置的RejectedExecutionException拒绝策略：</span></a></li></ol></li><li class="nav-item nav-level-5"><a class="nav-link" href="#9-死锁编码及定位分析"><span class="nav-number">1.0.0.9.</span> <span class="nav-text">9.死锁编码及定位分析</span></a></li></ol></li></ol></li></ol></li></ol></div>
             
 
           </div>

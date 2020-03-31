@@ -68,7 +68,7 @@
 
 
 
-  <meta name="keywords" content="Hexo, NexT" />
+  <meta name="keywords" content="JVM," />
 
 
 
@@ -79,14 +79,17 @@
 
 
 
-<meta name="description" content="Share">
-<meta property="og:type" content="website">
-<meta property="og:title" content="codeJerry&#39;s Blog">
-<meta property="og:url" content="http://yoursite.com/index.html">
+<meta name="description" content="JVM1.体系结构（Java健壮性、安全性）类加载器，执行引擎，本地方法栈，PC寄存器，方法区，Java栈，堆  2.类加载器ClassLoader负责将.class文件（文件有特定的文件标示0xCAFEBABE开头）加载到内存中，转换成方法区中的运行时数据结构，只负责加载不负责运行 虚拟机自带的加载器： 启动类加载器：Bootstrap（C++写的）  扩展类加载器：Extension（Java">
+<meta property="og:type" content="article">
+<meta property="og:title" content="JVM">
+<meta property="og:url" content="http://yoursite.com/2020/03/31/JVM/index.html">
 <meta property="og:site_name" content="codeJerry&#39;s Blog">
-<meta property="og:description" content="Share">
+<meta property="og:description" content="JVM1.体系结构（Java健壮性、安全性）类加载器，执行引擎，本地方法栈，PC寄存器，方法区，Java栈，堆  2.类加载器ClassLoader负责将.class文件（文件有特定的文件标示0xCAFEBABE开头）加载到内存中，转换成方法区中的运行时数据结构，只负责加载不负责运行 虚拟机自带的加载器： 启动类加载器：Bootstrap（C++写的）  扩展类加载器：Extension（Java">
 <meta property="og:locale" content="en_US">
+<meta property="article:published_time" content="2020-03-31T03:57:30.000Z">
+<meta property="article:modified_time" content="2020-03-31T03:58:52.586Z">
 <meta property="article:author" content="codeJerry">
+<meta property="article:tag" content="JVM">
 <meta name="twitter:card" content="summary">
 
 
@@ -117,13 +120,13 @@
 
 
 
-  <link rel="canonical" href="http://yoursite.com/"/>
+  <link rel="canonical" href="http://yoursite.com/2020/03/31/JVM/"/>
 
 
 
 
 
-  <title>codeJerry's Blog</title>
+  <title>JVM | codeJerry's Blog</title>
   
 
 
@@ -142,8 +145,7 @@
     
   
 
-  <div class="container sidebar-position-left 
-  page-home">
+  <div class="container sidebar-position-left page-post-detail">
     <div class="headband"></div>
 
     <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
@@ -216,9 +218,9 @@
         <div class="content-wrap">
           <div id="content" class="content">
             
-  <section id="posts" class="posts-expand">
+
+  <div id="posts" class="posts-expand">
     
-      
 
   
 
@@ -248,9 +250,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2020/03/31/JVM/" itemprop="url">JVM</a></h1>
+          <h1 class="post-title" itemprop="name headline">JVM</h1>
         
 
         <div class="post-meta">
@@ -300,9 +300,7 @@
       
 
       
-        
-          
-            <h2 id="JVM"><a href="#JVM" class="headerlink" title="JVM"></a>JVM</h2><h5 id="1-体系结构（Java健壮性、安全性）"><a href="#1-体系结构（Java健壮性、安全性）" class="headerlink" title="1.体系结构（Java健壮性、安全性）"></a>1.体系结构（Java健壮性、安全性）</h5><p>类加载器，执行引擎，本地方法栈，PC寄存器，方法区，Java栈，堆</p>
+        <h2 id="JVM"><a href="#JVM" class="headerlink" title="JVM"></a>JVM</h2><h5 id="1-体系结构（Java健壮性、安全性）"><a href="#1-体系结构（Java健壮性、安全性）" class="headerlink" title="1.体系结构（Java健壮性、安全性）"></a>1.体系结构（Java健壮性、安全性）</h5><p>类加载器，执行引擎，本地方法栈，PC寄存器，方法区，Java栈，堆</p>
 <hr>
 <h5 id="2-类加载器ClassLoader"><a href="#2-类加载器ClassLoader" class="headerlink" title="2.类加载器ClassLoader"></a>2.类加载器ClassLoader</h5><p>负责将.class文件（文件有特定的文件标示0xCAFEBABE开头）加载到内存中，转换成方法区中的运行时数据结构，只负责加载不负责运行</p>
 <h6 id="虚拟机自带的加载器："><a href="#虚拟机自带的加载器：" class="headerlink" title="虚拟机自带的加载器："></a>虚拟机自带的加载器：</h6><ul>
@@ -386,8 +384,6 @@
 <li><strong>xx参数</strong></li>
 </ol>
 
-          
-        
       
     </div>
     
@@ -402,313 +398,36 @@
 
     <footer class="post-footer">
       
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2020/03/30/Thread-codeJerry/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="codeJerry">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/avatar.gif">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="codeJerry's Blog">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2020/03/30/Thread-codeJerry/" itemprop="url">Thread-codeJerry</a></h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">Posted on</span>
-              
-              <time title="Post created" itemprop="dateCreated datePublished" datetime="2020-03-30T22:09:48+08:00">
-                2020-03-30
-              </time>
-            
-
-            
-
-            
-          </span>
-
+        <div class="post-tags">
           
-
+            <a href="/tags/JVM/" rel="tag"># JVM</a>
           
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
         </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-            <h2 id="Thread"><a href="#Thread" class="headerlink" title="Thread"></a>Thread</h2><h5 id="1-Thread"><a href="#1-Thread" class="headerlink" title="1.Thread"></a>1.Thread</h5><p>新建一个线程</p>
-<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">new</span> Thread(<span class="keyword">new</span> sourceClass(implements Runnable),<span class="string">"thread name"</span>).start();</span><br></pre></td></tr></table></figure>
-
-<hr>
-<h5 id="2-JMM（三个特点）Java-Memory-Model-是一种规范-并不真实存在"><a href="#2-JMM（三个特点）Java-Memory-Model-是一种规范-并不真实存在" class="headerlink" title="2.JMM（三个特点）Java Memory Model 是一种规范 并不真实存在"></a>2.JMM（三个特点）Java Memory Model 是一种规范 并不真实存在</h5><ol>
-<li>​    可见性（通知机制）</li>
-<li>​    原子性</li>
-<li>​    有序性</li>
-</ol>
-<p>concurrent并发（HashMap）<br>atomic原子性（atomicInteger、atomicReference）<br>ReentrantLock重入锁</p>
-<hr>
-<h5 id="3-AtomicInteger："><a href="#3-AtomicInteger：" class="headerlink" title="3.AtomicInteger："></a>3.AtomicInteger：</h5><p>CAS思想 –&gt;UnSafe—&gt;CAS底层思想—&gt;ABA问题—&gt;原子引用更新—&gt;如何规避ABA问题</p>
-<p>Unsafe类+CAS思想（自旋锁）<br>CAS：（CompareAndSwap）比较当前工作内存中的值和主内存中的值，如果相同则操作，否则什么都不做，继续比较直到成功为止。</p>
-<p>ABA:狸猫换太子（A-&gt;B-&gt;A）<br>如何解决：理解原子引用+新增一种机制（版本号），修改版本号（类似时间戳）</p>
-<hr>
-<h5 id="4-容器线程不安全"><a href="#4-容器线程不安全" class="headerlink" title="4.容器线程不安全"></a>4.容器线程不安全</h5><p>ArrayList线程不安全+不安全的案例</p>
-<p>解决方案</p>
-<ul>
-<li>3.1 new Vector();</li>
-<li>3.2 Collections.synchronizedList(new ArrayList());</li>
-<li>3.3 new CopyOnWriteArrayList&lt;&gt;();</li>
-</ul>
-<hr>
-<h5 id="5-锁"><a href="#5-锁" class="headerlink" title="5.锁"></a>5.锁</h5><p>公平锁和非公平锁<br>可重入锁（又名递归锁）<br>自旋锁（Demo:CAS，手写一个自旋锁）<br>独占锁（写锁）<br>共享锁（读锁）</p>
-<hr>
-<h5 id="6-JUC"><a href="#6-JUC" class="headerlink" title="6.JUC"></a>6.JUC</h5><ul>
-<li>CountDownLatch（倒计时器）</li>
-<li>CyclicBarrier (循环屏障，集齐七颗才能召唤神龙)</li>
-<li>Semaphore （信号量:①多个共享资源的互斥使用②并发线程数的控制。 Demo 抢车位）</li>
-</ul>
-<hr>
-<h5 id="7-Callable"><a href="#7-Callable" class="headerlink" title="7.Callable"></a>7.Callable</h5><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">FutureTask&lt;Integer&gt; futureTask = <span class="keyword">new</span> FutureTask&lt;&gt;(<span class="keyword">new</span> MyThread());<span class="comment">//该线程资源类返回一个Integer类型值</span></span><br><span class="line"><span class="keyword">new</span> Thread(futureTask,<span class="string">"AAA"</span>).start();</span><br></pre></td></tr></table></figure>
-
-
-<p>一个futureTask被一个thread调用，第二个调用只是复用不考虑;</p>
-<hr>
-<h5 id="8-线程池-（7大参数）"><a href="#8-线程池-（7大参数）" class="headerlink" title="8.线程池 （7大参数）"></a>8.线程池 （7大参数）</h5><p>实现多线程的方式</p>
-<ol>
-<li><p>基础Thread类</p>
-</li>
-<li><p>实现Runnable接口 无返回值</p>
-</li>
-<li><p>实现Callable接口 有返回值</p>
-</li>
-<li><p>线程池</p>
-<p>why：控制运行的线程的数量，处理过程中将任务放进队列，在线程中创建后启动任务，线程数超过最大后排队等候，等其他执行完毕再从队列中去除任务执行。<br>优势：线程复用，控制最大并发数，管理线程</p>
-<h6 id="1、2、运用到了阻塞队列-BlockingQueue"><a href="#1、2、运用到了阻塞队列-BlockingQueue" class="headerlink" title="1、2、运用到了阻塞队列 BlockingQueue"></a>1、2、运用到了阻塞队列 BlockingQueue</h6><h6 id="3、运用到了SynchronousQueue同步队列"><a href="#3、运用到了SynchronousQueue同步队列" class="headerlink" title="3、运用到了SynchronousQueue同步队列"></a>3、运用到了SynchronousQueue同步队列</h6></li>
-</ol>
-<ul>
-<li><pre><code class="Java">ExecutorService threadPool1 = Executors.newFixedThreadPool(<span class="number">5</span>);<span class="comment">//一池5个处理线程</span>
-ExecutorService threadPool2 = Executors.newSingleThreadExecutor();<span class="comment">//一池1个处理线程</span>
-ExecutorService threadPool3 = Executors.newCachedThreadPool();<span class="comment">//一池N个处理线程,根据业务自动扩线程</span>
-&lt;!--￼<span class="number">2</span>--&gt;</code></pre>
-</li>
-<li><p>workQueue：BlockingQueue 阻塞队列（候客区）：</p>
-<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">maximumPoolSize 参数设置考虑：</span><br><span class="line">* CPU密集型：CPU核数+<span class="number">1</span></span><br><span class="line">* IO密集型：CPU核数*<span class="number">2</span> 或者CPU核数/(<span class="number">1</span>-阻塞系数) eq:<span class="number">8</span>/(<span class="number">1</span>-<span class="number">0.9</span>)=<span class="number">80</span></span><br></pre></td></tr></table></figure>
-
-<h6 id="JDK内置的RejectedExecutionException拒绝策略："><a href="#JDK内置的RejectedExecutionException拒绝策略：" class="headerlink" title="JDK内置的RejectedExecutionException拒绝策略："></a>JDK内置的RejectedExecutionException拒绝策略：</h6><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">new</span> ThreadPoolExecutor.AbortPolicy();<span class="comment">//直接抛出异常</span></span><br><span class="line"><span class="keyword">new</span> ThreadPoolExecutor.CallerRunsPolicy();<span class="comment">//回退给调用者</span></span><br><span class="line"><span class="keyword">new</span> ThreadPoolExecutor.DiscardOldestPolicy();<span class="comment">//抛弃队列中等待最久的任务，然后把当前任务加入队列中尝试再次提交当前任务</span></span><br><span class="line"><span class="keyword">new</span> ThreadPoolExecutor.DiscardPolicy();<span class="comment">//直接丢弃任务</span></span><br></pre></td></tr></table></figure>
-
-</li>
-</ul>
-<h5 id="9-死锁编码及定位分析"><a href="#9-死锁编码及定位分析" class="headerlink" title="9.死锁编码及定位分析"></a>9.死锁编码及定位分析</h5><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">* 多个线程（两个以上）争夺资源互相等待的现象</span><br><span class="line">* 必须具备四个条件：</span><br><span class="line">* 互斥</span><br><span class="line">* 请求与保持</span><br><span class="line">* 资源不可剥夺</span><br><span class="line">* 循环等待条件</span><br></pre></td></tr></table></figure>
-          
-        
-      
-    </div>
-    
-    
-    
-
-    
-
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
       
 
       
       
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
       
 
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2020/03/19/test-my-site/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="codeJerry">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/avatar.gif">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="codeJerry's Blog">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2020/03/19/test-my-site/" itemprop="url">test_my_site</a></h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
             
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">Posted on</span>
-              
-              <time title="Post created" itemprop="dateCreated datePublished" datetime="2020-03-19T00:00:38+08:00">
-                2020-03-19
-              </time>
+              <a href="/2020/03/30/Thread-codeJerry/" rel="next" title="Thread-codeJerry">
+                <i class="fa fa-chevron-left"></i> Thread-codeJerry
+              </a>
             
+          </div>
 
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
             
-
-            
-          </span>
-
-          
-
-          
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
+          </div>
         </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
       
 
       
-        
-          
-            
-          
-        
-      
-    </div>
-    
-    
-    
-
-    
-
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
       
     </footer>
   </div>
@@ -718,142 +437,11 @@ ExecutorService threadPool3 = Executors.newCachedThreadPool();<span class="comme
   </article>
 
 
-    
-      
 
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2020/03/18/hello-world/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="codeJerry">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/avatar.gif">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="codeJerry's Blog">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2020/03/18/hello-world/" itemprop="url">Hello World</a></h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">Posted on</span>
-              
-              <time title="Post created" itemprop="dateCreated datePublished" datetime="2020-03-18T23:45:42+08:00">
-                2020-03-18
-              </time>
-            
-
-            
-
-            
-          </span>
-
-          
-
-          
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-            <p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="noopener">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="noopener">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/one-command-deployment.html" target="_blank" rel="noopener">Deployment</a></p>
-
-          
-        
+    <div class="post-spread">
       
     </div>
-    
-    
-    
-
-    
-
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
   </div>
-  
-  
-  
-  </article>
-
-
-    
-  </section>
-
-  
 
 
           </div>
@@ -861,6 +449,10 @@ ExecutorService threadPool3 = Executors.newCachedThreadPool();<span class="comme
 
 
           
+
+  
+
+
 
         </div>
         
@@ -881,8 +473,17 @@ ExecutorService threadPool3 = Executors.newCachedThreadPool();<span class="comme
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            Table of Contents
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            Overview
+          </li>
+        </ul>
+      
 
-      <section class="site-overview-wrap sidebar-panel sidebar-panel-active">
+      <section class="site-overview-wrap sidebar-panel">
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
             
@@ -933,6 +534,22 @@ ExecutorService threadPool3 = Executors.newCachedThreadPool();<span class="comme
         </div>
       </section>
 
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#JVM"><span class="nav-number">1.</span> <span class="nav-text">JVM</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#1-体系结构（Java健壮性、安全性）"><span class="nav-number">1.0.0.1.</span> <span class="nav-text">1.体系结构（Java健壮性、安全性）</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#2-类加载器ClassLoader"><span class="nav-number">1.0.0.2.</span> <span class="nav-text">2.类加载器ClassLoader</span></a><ol class="nav-child"><li class="nav-item nav-level-6"><a class="nav-link" href="#虚拟机自带的加载器："><span class="nav-number">1.0.0.2.1.</span> <span class="nav-text">虚拟机自带的加载器：</span></a></li><li class="nav-item nav-level-6"><a class="nav-link" href="#用户自定义的加载器（了解就行，不会去修改）："><span class="nav-number">1.0.0.2.2.</span> <span class="nav-text">用户自定义的加载器（了解就行，不会去修改）：</span></a></li><li class="nav-item nav-level-6"><a class="nav-link" href="#——双亲委派机制！！！"><span class="nav-number">1.0.0.2.3.</span> <span class="nav-text">——双亲委派机制！！！</span></a></li><li class="nav-item nav-level-6"><a class="nav-link" href="#——沙箱安全机制！！"><span class="nav-number">1.0.0.2.4.</span> <span class="nav-text">——沙箱安全机制！！</span></a></li></ol></li><li class="nav-item nav-level-5"><a class="nav-link" href="#3-Native-Method-Stack栈"><span class="nav-number">1.0.0.3.</span> <span class="nav-text">3.Native Method Stack栈</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#4-PC寄存器"><span class="nav-number">1.0.0.4.</span> <span class="nav-text">4.PC寄存器</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#5-方法区-Method-Area-（别名Non-Heap非堆）"><span class="nav-number">1.0.0.5.</span> <span class="nav-text">5.方法区 Method Area （别名Non-Heap非堆）</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#6-Java虚拟机栈（stack线程私有，不存在垃圾回收）"><span class="nav-number">1.0.0.6.</span> <span class="nav-text">6.Java虚拟机栈（stack线程私有，不存在垃圾回收）</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#7-堆（heap）对象生命周期"><span class="nav-number">1.0.0.7.</span> <span class="nav-text">7.堆（heap）对象生命周期</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#栈-堆-方法区的交互关系"><span class="nav-number">1.0.0.8.</span> <span class="nav-text">栈+堆+方法区的交互关系</span></a></li></ol></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#GC："><span class="nav-number">1.1.</span> <span class="nav-text">GC：</span></a><ol class="nav-child"><li class="nav-item nav-level-6"><a class="nav-link" href="#分代收集算法-（没有最好的GC算法，只能对症下药）-："><span class="nav-number">1.1.0.0.1.</span> <span class="nav-text">分代收集算法 （没有最好的GC算法，只能对症下药） ：</span></a></li><li class="nav-item nav-level-6"><a class="nav-link" href="#GC四大算法："><span class="nav-number">1.1.0.0.2.</span> <span class="nav-text">GC四大算法：</span></a></li></ol></li></ol></li></ol></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#JVM加强"><span class="nav-number">2.</span> <span class="nav-text">JVM加强</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#1-什么是垃圾，GC-Root是什么"><span class="nav-number">2.0.0.1.</span> <span class="nav-text">1.什么是垃圾，GC Root是什么</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#2-JVM的参数类型"><span class="nav-number">2.0.0.2.</span> <span class="nav-text">2.JVM的参数类型</span></a></li></ol></li></ol></li></ol></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
       
 
       
@@ -1073,6 +690,10 @@ ExecutorService threadPool3 = Executors.newCachedThreadPool();<span class="comme
 
 
   
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.4"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.1.4"></script>
+
+
 
   
 
